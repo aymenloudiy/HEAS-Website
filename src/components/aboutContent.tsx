@@ -1,4 +1,4 @@
-function aboutContent() {
+function AboutContent() {
   return (
     <div>
       <section>
@@ -113,4 +113,4 @@ function aboutContent() {
     </div>
   );
 }
-export default aboutContent;
+export default AboutContent;
