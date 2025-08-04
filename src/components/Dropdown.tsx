@@ -11,9 +11,9 @@ function Dropdown() {
   };
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <p>Projects</p>
+      <p className="cursor-pointer mb-2">Projects</p>
       {isDropdownVisible && (
-        <ul>
+        <ul className="absolute flex flex-col mb-2 gap-2 ">
           <li>
             <NavLink to="/about">About</NavLink>
           </li>
