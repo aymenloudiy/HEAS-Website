@@ -1,6 +1,6 @@
 function TeamHero() {
   return (
-    <div>
+    <div className="mx-32 border-2 h-64 my-12">
       <img src="" alt="" />
     </div>
   );

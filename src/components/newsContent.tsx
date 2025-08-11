@@ -1,9 +1,10 @@
 function NewsContent() {
   return (
-    <div>
-      <h2>News</h2>
-      <ul>
-        <li>
+    <div className="absolute top-0 bottom-0 right-0 left-0 mx-32 flex flex-col">
+      <h2 className="font-bold mb-8 text-2xl">News</h2>
+      <ul className="grid grid-cols-2 grid-rows-2 self-stretch grow">
+        {/* TODO: The image itself should be background and on hover the div with pos absolute to pos relative should pop up with animation */}
+        <li className="self-stretch w-full">
           <img
             src=""
             alt="The Power of Texture: How to Layer Materials Like a Designer"

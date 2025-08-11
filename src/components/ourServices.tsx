@@ -1,9 +1,9 @@
 function OurServices() {
   return (
-    <div>
-      <section>
-        <h2>Our Services</h2>
-        <p>
+    <div className="flex flex-col justify-center my-16">
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h2 className="text-center font-bold mb-8 text-2xl">Our Services</h2>
+        <p className="text-center">
           At HEAS, we offer a full spectrum of interior design services tailored
           to your lifestyle, timeline, and vision. From full-scale renovations
           to curated furnishing packages, our studio delivers thoughtful,
@@ -12,8 +12,9 @@ function OurServices() {
           the way.
         </p>
       </section>
-      <section>
-        <h3>Full Interior Design Packages</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Full Interior Design Packages</h3>
         <p>
           We provide comprehensive interior design services from concept to
           completion. Whether you're building from the ground up or reimagining
@@ -24,8 +25,10 @@ function OurServices() {
           practical needs.
         </p>
       </section>
-      <section>
-        <h3>Furnishing & Styling</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Furnishing & Styling</h3>
         <p>
           Our furnishing service focuses on transforming spaces through curated
           furniture, art, lighting, and accessories. We create tailored floor
@@ -34,8 +37,10 @@ function OurServices() {
           details—so your space is ready to live in and love.
         </p>
       </section>
-      <section>
-        <h3>Custom Cabinetry Design</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Custom Cabinetry Design</h3>
         <p>
           We specialize in the design of custom millwork and cabinetry for
           kitchens, bathrooms, closets, and built-ins. Our designs prioritize
@@ -45,8 +50,10 @@ function OurServices() {
           space.
         </p>
       </section>
-      <section>
-        <h3>Renovation Coordination</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Renovation Coordination</h3>
         <p>
           If you're renovating, HEAS offers design-led project coordination. We
           collaborate with architects, builders, and trades to ensure your
@@ -56,8 +63,10 @@ function OurServices() {
           schedule.
         </p>
       </section>
-      <section>
-        <h3>Real Estate Staging</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Real Estate Staging</h3>
         <p>
           We offer design-conscious staging for homeowners, realtors, and
           developers looking to maximize a property's market appeal. Our styling
@@ -67,8 +76,10 @@ function OurServices() {
           audience.
         </p>
       </section>
-      <section>
-        <h3>Exclusive Trade Access</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Exclusive Trade Access</h3>
         <p>
           HEAS holds trade accounts with a wide network of high-quality
           furniture and décor brands. We extend exclusive access and designer
@@ -78,8 +89,10 @@ function OurServices() {
           from start to finish.
         </p>
       </section>
-      <section>
-        <h3>Online Consultations</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="flex flex-col justify-center my-4 mx-64">
+        <h3 className="mb-8 font-bold">Online Consultations</h3>
         <p>
           We also offer remote design services for clients seeking flexible
           support. Ideal for smaller projects or out-of-town clients, our online

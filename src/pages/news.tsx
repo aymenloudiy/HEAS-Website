@@ -1,10 +1,6 @@
 import NewsContent from "../components/NewsContent";
 
 function News() {
-  return (
-    <div>
-      <NewsContent />
-    </div>
-  );
+  return <NewsContent />;
 }
 export default News;

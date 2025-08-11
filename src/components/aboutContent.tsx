@@ -1,12 +1,12 @@
 function AboutContent() {
   return (
-    <div>
-      <section>
-        <h2>
+    <div className="my-16 mx-32">
+      <section className="my-12 mx-64">
+        <h2 className="text-center font-bold mb-8 text-2xl">
           At HEAS, we believe that thoughtful design has the power to transform
           everyday living.
         </h2>
-        <p>
+        <p className="text-center">
           HEAS is a Toronto-based interior design and architecture studio
           dedicated to creating spaces that are as purposeful as they are
           beautiful. Guided by a deep commitment to quality, functionality, and
@@ -17,10 +17,12 @@ function AboutContent() {
           work within them.
         </p>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>We transform vision into space.</h3>
+      <hr className="my-12 mx-32 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+      <section className="my-16">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="order-1">
+            <h3 className="mb-8 font-bold">We transform vision into space.</h3>
             <p>
               At HEAS, our work is rooted in the belief that interior
               environments have the power to shape how we feel, live, and
@@ -32,13 +34,15 @@ function AboutContent() {
               through time.
             </p>
           </div>
-          <img src="" alt="" />
+          <img className="order-2 border-2 self-stretch w-full" src="" alt="" />
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>We are committed to an experiential approach to design.</h3>
+      <section className="my-16">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="order-2">
+            <h3 className="mb-8 font-bold">
+              We are committed to an experiential approach to design.
+            </h3>
             <p>
               At HEAS, we believe the most meaningful spaces are felt before
               they are understood. Our work is guided by the pursuit of
@@ -50,13 +54,15 @@ function AboutContent() {
               a genuine sense of care.
             </p>
           </div>
-          <img src="" alt="" />
+          <img className="order-1 border-2 self-stretch w-full" src="" alt="" />
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>We use design as a tool for building a sustainable future.</h3>
+      <section className="my-16">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="order-1">
+            <h3 className="mb-8 font-bold">
+              We use design as a tool for building a sustainable future.
+            </h3>
             <p>
               At HEAS, we recognize the responsibility of design in shaping a
               more sustainable and resilient world. Our approach integrates
@@ -69,13 +75,13 @@ function AboutContent() {
               both people and the environment for years to come.
             </p>
           </div>
-          <img src="" alt="" />
+          <img className="order-2 border-2 self-stretch w-full" src="" alt="" />
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>We are trusted collaborators.</h3>
+      <section className="my-16">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="order-2">
+            <h3 className="mb-8 font-bold">We are trusted collaborators.</h3>
             <p>
               At HEAS, we build lasting relationships through expertise,
               integrity, and a design process rooted in active listening and
@@ -88,13 +94,15 @@ function AboutContent() {
               truly matter.
             </p>
           </div>
-          <img src="" alt="" />
+          <img className="order-1 border-2 self-stretch w-full" src="" alt="" />
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>We value the uniqueness of voices.</h3>
+      <section className="my-16">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="order-1">
+            <h3 className="mb-8 font-bold">
+              We value the uniqueness of voices.
+            </h3>
             <p>
               At HEAS, we believe that meaningful design begins with diverse
               perspectives. Our studio thrives on collaboration, dialogue, and
@@ -107,7 +115,7 @@ function AboutContent() {
               design.
             </p>
           </div>
-          <img src="" alt="" />
+          <img className="order-2 border-2 self-stretch w-full" src="" alt="" />
         </div>
       </section>
     </div>
