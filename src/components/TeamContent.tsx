@@ -42,7 +42,7 @@ function TeamContent() {
             <li className="h-full">
               <NavLink to="/">
                 <img
-                  src="/src/assets/team-picture-1.jpg"
+                  src="/assets/team-picture-1.jpg"
                   alt="team-picture-1.jpg"
                 />
               </NavLink>
@@ -50,7 +50,7 @@ function TeamContent() {
             <li className="h-full">
               <NavLink to="/">
                 <img
-                  src="/src/assets/team-picture-2.jpg"
+                  src="/assets/team-picture-2.jpg"
                   alt="team-picture-2.jpg"
                 />
               </NavLink>
@@ -58,7 +58,7 @@ function TeamContent() {
             <li className="h-full">
               <NavLink to="/">
                 <img
-                  src="/src/assets/team-picture-3.jpg"
+                  src="/assets/team-picture-3.jpg"
                   alt="team-picture-3.jpg"
                 />
               </NavLink>
@@ -66,7 +66,7 @@ function TeamContent() {
             <li className="h-full">
               <NavLink to="/">
                 <img
-                  src="/src/assets/team-picture-4.jpg"
+                  src="/assets/team-picture-4.jpg"
                   alt="team-picture-4.jpg"
                 />
               </NavLink>

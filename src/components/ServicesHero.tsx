@@ -3,7 +3,7 @@ function ServicesHero() {
     <div className="mx-32 h-[512px] overflow-hidden">
       <img
         className="object-cover h-full w-full"
-        src="/src/assets/banner.jpg"
+        src="/assets/banner.jpg"
         alt=""
       />
     </div>

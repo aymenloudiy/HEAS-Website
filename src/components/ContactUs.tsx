@@ -7,7 +7,7 @@ function ContactUs() {
       <div>
         <img
           className="max-h-[650px]"
-          src="/src/assets/contact-picture.jpg"
+          src="/assets/contact-picture.jpg"
           alt=""
         />
       </div>

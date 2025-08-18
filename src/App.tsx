@@ -11,7 +11,7 @@ function App() {
       <div className="relative">
         <div className="h-fit absolute">
           <video autoPlay>
-            <source src="/src/assets/vecteezy_3d-render-animation-scene-living-room-interior-design_5018340.mp4" />
+            <source src="/assets/vecteezy_3d-render-animation-scene-living-room-interior-design_5018340.mp4" />
           </video>
         </div>
         <div className="min-h-screen flex flex-col">
