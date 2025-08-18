@@ -39,24 +39,36 @@ function TeamContent() {
         <div>
           <h3 className="mb-8 font-bold">People</h3>
           <ul className="grid grid-cols-4 gap-8 h-64">
-            <li className="border-2 h-full">
+            <li className="h-full">
               <NavLink to="/">
-                <img src="" alt="" />
+                <img
+                  src="/src/assets/team-picture-1.jpg"
+                  alt="team-picture-1.jpg"
+                />
               </NavLink>
             </li>
-            <li className="border-2 h-full">
+            <li className="h-full">
               <NavLink to="/">
-                <img src="" alt="" />
+                <img
+                  src="/src/assets/team-picture-2.jpg"
+                  alt="team-picture-2.jpg"
+                />
               </NavLink>
             </li>
-            <li className="border-2 h-full">
+            <li className="h-full">
               <NavLink to="/">
-                <img src="" alt="" />
+                <img
+                  src="/src/assets/team-picture-3.jpg"
+                  alt="team-picture-3.jpg"
+                />
               </NavLink>
             </li>
-            <li className="border-2 h-full">
+            <li className="h-full">
               <NavLink to="/">
-                <img src="" alt="" />
+                <img
+                  src="/src/assets/team-picture-4.jpg"
+                  alt="team-picture-4.jpg"
+                />
               </NavLink>
             </li>
           </ul>
