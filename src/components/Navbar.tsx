@@ -5,7 +5,7 @@ function navbar() {
   return (
     <div>
       <nav>
-        <ul className="flex gap-12">
+        <ul className="flex gap-12 justify-center">
           <li>
             <NavLink to="/services">Services</NavLink>
           </li>

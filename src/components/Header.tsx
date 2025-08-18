@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 
 function Header() {
   return (
-    <div className="mx-8 my-8 mb-18">
-      <ul className="flex items-stretch justify-center">
+    <header className="mx-8 my-8 mb-18 font-light fixed right-0 left-0 z-10">
+      <ul className="flex items-stretch justify-center ">
         <li className="flex-1 ">Shop</li>
         <li className="flex-1 text-center ">
           <NavLink to={"/"}>
@@ -15,7 +15,7 @@ function Header() {
           <Navbar />
         </li>
       </ul>
-    </div>
+    </header>
   );
 }
 export default Header;
