@@ -3,22 +3,25 @@ import { NavLink } from "react-router";
 
 function Dropdown() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const handleMouseEnter = () => {
-    setDropdownVisible(true);
-  };
-  const handleMouseLeave = () => {
-    setDropdownVisible(false);
-  };
+
   return (
-    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <p className="cursor-pointer mb-2">Projects</p>
+    <li
+      className="relative"
+      onMouseEnter={() => setDropdownVisible(true)}
+      onMouseLeave={() => setDropdownVisible(false)}
+    >
+      <p className="cursor-pointer">Profile</p>
       {isDropdownVisible && (
-        <ul className="absolute flex flex-col mb-2 gap-2 ">
+        <ul className="absolute top-full left-0 flex flex-col gap-2 bg-white rounded-md p-2 z-50">
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about" className="">
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/team">Team</NavLink>
+            <NavLink to="/team" className="">
+              Team
+            </NavLink>
           </li>
         </ul>
       )}

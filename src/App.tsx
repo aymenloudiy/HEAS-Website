@@ -10,7 +10,7 @@ function App() {
     <div>
       <div className="relative">
         <div className="h-fit absolute">
-          <video autoPlay>
+          <video autoPlay loop>
             <source src="/assets/vecteezy_3d-render-animation-scene-living-room-interior-design_5018340.mp4" />
           </video>
         </div>
