@@ -1,11 +1,10 @@
-// src/routes/projects/ProjectsIndex.tsx
 import { Link } from "react-router";
 
 type Project = {
   slug: string;
   title: string;
   location?: string;
-  cover: string; // image path
+  cover: string;
   imagesCount?: number;
   blurb?: string;
 };
@@ -20,7 +19,6 @@ const projects: Project[] = [
     blurb:
       "Contemporary minimalism with warm wood, soft greys, and clean white surfaces for calm, refined city living.",
   },
-  // Add more projects here later…
 ];
 
 export default function Projects() {
@@ -75,7 +73,6 @@ export default function Projects() {
           ))}
         </ul>
 
-        {/* Empty state (in case projects becomes empty) */}
         {projects.length === 0 && (
           <div className="text-sm text-black/70">
             No projects yet. Come back soon.

@@ -11,14 +11,19 @@ function Navbar() {
           </NavLink>
         </li>
         <Dropdown />
-        {/* <li>
-          <NavLink to="/news" className="">
-            News
-          </NavLink>
-        </li> */}
         <li>
           <NavLink to="/projects" className="">
             Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/blogs" className="">
+            Blogs
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/news" className="">
+            News
           </NavLink>
         </li>
         <li>

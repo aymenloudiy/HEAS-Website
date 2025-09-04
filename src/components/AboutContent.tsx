@@ -1,7 +1,6 @@
 function AboutContent() {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-24 pb-16 bg-white text-black">
-      {/* Intro */}
       <section className="my-12">
         <h2 className="text-center font-bold mb-6 text-2xl md:text-3xl">
           At HEAS, we believe that thoughtful design has the power to transform
@@ -21,7 +20,6 @@ function AboutContent() {
 
       <hr className="my-12 h-px bg-gradient-to-r from-transparent via-neutral-300 to-transparent border-0" />
 
-      {/* Section 1 */}
       <section className="my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="order-2 md:order-1">
@@ -48,7 +46,6 @@ function AboutContent() {
         </div>
       </section>
 
-      {/* Section 2 */}
       <section className="my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="order-2">
@@ -77,7 +74,6 @@ function AboutContent() {
         </div>
       </section>
 
-      {/* Section 3 */}
       <section className="my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="order-2 md:order-1">
@@ -107,7 +103,6 @@ function AboutContent() {
         </div>
       </section>
 
-      {/* Section 4 */}
       <section className="my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="order-2">
@@ -135,7 +130,6 @@ function AboutContent() {
         </div>
       </section>
 
-      {/* Section 5 */}
       <section className="my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="order-2 md:order-1">

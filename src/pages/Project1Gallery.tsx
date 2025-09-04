@@ -19,9 +19,6 @@ export default function DowntownTorontoResidenceGallery() {
             <button
               key={img.src}
               className="group text-left rounded-lg overflow-hidden border border-black/10"
-              onClick={() => {
-                /* openLightbox(img.src) */
-              }}
             >
               <img
                 src={img.src}

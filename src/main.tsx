@@ -12,18 +12,25 @@ import Services from "./pages/Services.tsx";
 import Team from "./pages/Team.tsx";
 import DowntownTorontoResidence from "./pages/Project-1";
 import DowntownTorontoResidenceGallery from "./pages/Project1Gallery.tsx";
+import BlogsIndex from "./pages/BlogIndex.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
+import ProjectBeforeAfterArticle from "./pages/ProjectBeforeAfter.tsx";
+import NewMembersArticle from "./pages/NewMembers.tsx";
+import WhitePaintArticle from "./pages/WhitePaint.tsx";
+import LayeringArticle from "./pages/Layering.tsx";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Home />}></Route>
-          <Route path="contact" element={<Contact />}></Route>
-          <Route path="about" element={<About />}></Route>
-          <Route path="news" element={<News />}></Route>
-          <Route path="projects" element={<Projects />}></Route>
-          <Route path="services" element={<Services />}></Route>
-          <Route path="team" element={<Team />}></Route>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="team" element={<Team />} />
+          <Route path="news" element={<News />} />
+          <Route path="contact" element={<Contact />} />
           <Route
             path="projects/downtown-toronto-residence"
             element={<DowntownTorontoResidence />}
@@ -31,6 +38,22 @@ createRoot(document.getElementById("root")!).render(
           <Route
             path="projects/downtown-toronto-residence/gallery"
             element={<DowntownTorontoResidenceGallery />}
+          />
+          <Route path="blogs" element={<BlogsIndex />} />
+          <Route path="blogs/:slug" element={<BlogPost />} />
+          <Route path="news" element={<News />} />
+          <Route
+            path="news/layering-materials-like-a-designer"
+            element={<LayeringArticle />}
+          />
+          <Route
+            path="news/choosing-the-right-white-paint"
+            element={<WhitePaintArticle />}
+          />
+          <Route path="news/new-team-members" element={<NewMembersArticle />} />
+          <Route
+            path="news/before-after-toronto-townhome"
+            element={<ProjectBeforeAfterArticle />}
           />
         </Route>
       </Routes>
