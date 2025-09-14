@@ -5,11 +5,13 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-10 bg-white px-8 py-4 font-light">
       <ul className="flex items-center justify-between">
-        <li className="flex-1">Shop</li>
+        <li className="flex-1 text-[12px]">SHOP</li>
 
         <li className="flex-1 text-center">
           <NavLink to="/">
-            <h1 className="text-xl font-semibold">HEAS</h1>
+            <h1 className="text-xl font-semibold flex justify-center">
+              <img className="h-[100px]" src="/Logo/HEAS.png" alt="" />
+            </h1>
           </NavLink>
         </li>
 

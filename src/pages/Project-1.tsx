@@ -99,7 +99,7 @@ export default function DowntownTorontoResidence() {
   return (
     <section className="bg-white text-black">
       <div className="mx-auto max-w-5xl px-4 pt-10 md:pt-16">
-        <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">
+        <h1 className="text-xl md:text-2xl font-semibold tracking-tight">
           Downtown Toronto Residence
         </h1>
         <p className="mt-4 max-w-3xl leading-relaxed text-sm md:text-base">
@@ -113,7 +113,7 @@ export default function DowntownTorontoResidence() {
 
       <div className="mx-auto max-w-5xl px-4 mt-8 md:mt-10">
         <Link to="gallery" aria-label="Open gallery" className="group block">
-          <figure className="relative overflow-hidden rounded-xl border border-black/10">
+          <figure className="relative overflow-hidden border border-black/10">
             <img
               src={hero.src}
               alt={hero.alt}
@@ -142,7 +142,7 @@ export default function DowntownTorontoResidence() {
           {projectImages.map((img) => (
             <figure
               key={img.src}
-              className="mb-4 break-inside-avoid rounded-lg overflow-hidden border border-black/10"
+              className="mb-4 break-inside-avoid  overflow-hidden border border-black/10"
             >
               <img
                 src={img.src}

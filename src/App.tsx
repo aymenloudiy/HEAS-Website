@@ -4,31 +4,39 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  const location = useLocation();
-  console.log(location);
-  return location.pathname == "/" ? (
-    <div>
-      <div className="relative">
-        <div className="h-fit absolute">
-          <video autoPlay loop>
-            <source src="/assets/vecteezy_3d-render-animation-scene-living-room-interior-design_5018340.mp4" />
-          </video>
-        </div>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <div className="relative grow">
-            <Outlet />
-          </div>
-        </div>
-      </div>
-      <Footer />
-    </div>
-  ) : (
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
+
+  return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="relative grow mt-32">
-        <Outlet />
-      </div>
+
+      <main className="flex-1">
+        {isHome ? (
+          <>
+            <section className="relative min-h-screen">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 h-full w-full object-cover"
+              >
+                <source src="/assets/vecteezy_3d-render-animation-scene-living-room-interior-design_5018340.mp4" />
+              </video>
+
+              <div className="relative z-10"></div>
+            </section>
+
+            <Outlet />
+          </>
+        ) : (
+          <div className="relative grow mt-32">
+            <Outlet />
+          </div>
+        )}
+      </main>
+
       <Footer />
     </div>
   );

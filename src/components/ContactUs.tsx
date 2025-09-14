@@ -12,19 +12,25 @@ function ContactUs() {
         />
       </div>
       <div className="flex flex-col grow max-w-xl">
-        <h2 className="font-bold mb-8 text-2xl">Contact Us</h2>
+        <h1 className="font-bold mb-8 text-xl">Contact Us</h1>
         <form action="" className="flex flex-col gap-4 my-8">
-          <label htmlFor="">Full Name</label>
+          <label className="font-light" htmlFor="">
+            Full Name
+          </label>
           <input
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             type="text"
           />
-          <label htmlFor="">E-mail</label>
+          <label className="font-light" htmlFor="">
+            E-mail
+          </label>
           <input
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             type="email"
           />
-          <label htmlFor="">Message</label>
+          <label className="font-light" htmlFor="">
+            Start chatting with HEAS
+          </label>
           <textarea
             rows={12}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -46,6 +52,22 @@ function ContactUs() {
             </li>
             <li className="">
               <FaInstagram />
+            </li>
+          </ul>
+        </div>
+        <div className="flex justify-center text-center m-6">
+          <ul className="flex flex-col gap-4">
+            <li>
+              <p>HEAS INC.</p>
+            </li>
+            <li>
+              <p>Toronto ON Canada</p>
+            </li>
+            <li>
+              <p>+1 819 329 6895</p>
+            </li>
+            <li>
+              <p>General Information: studio@heas.ca</p>
             </li>
           </ul>
         </div>

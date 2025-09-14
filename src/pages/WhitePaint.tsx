@@ -5,7 +5,7 @@ export default function WhitePaintArticle() {
     <article className="bg-white text-black">
       <div className="mx-auto max-w-5xl px-4 pt-24 pb-16">
         <header className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-semibold leading-tight">
+          <h1 className="text-2xl md:text-4xl font-semibold leading-tight">
             Choosing the Right White Paint: Our Studio’s Top Picks
           </h1>
           <div className="mt-2 text-sm text-black/60">

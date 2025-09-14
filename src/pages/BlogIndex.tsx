@@ -27,13 +27,9 @@ export default function BlogsIndex() {
     <section className="bg-white text-black">
       <div className="mx-auto max-w-6xl px-4 pt-24 pb-16">
         <header className="mb-10">
-          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">
+          <h1 className="text-xl md:text-2xl font-semibold tracking-tight">
             Blog
           </h1>
-          <p className="mt-3 text-sm md:text-base max-w-2xl">
-            Notes on interior design, materiality, and the process behind
-            timeless spaces.
-          </p>
         </header>
 
         {posts.length === 0 ? (
@@ -44,7 +40,7 @@ export default function BlogsIndex() {
               <li key={p.slug} className="group">
                 <Link
                   to={`/blogs/${p.slug}`}
-                  className="block rounded-xl overflow-hidden border border-black/10 focus:outline-none focus:ring-2 focus:ring-black"
+                  className="block overflow-hidden border border-black/10 focus:outline-none focus:ring-2 focus:ring-black"
                   aria-label={`Open blog post: ${p.title}`}
                 >
                   <figure className="relative">

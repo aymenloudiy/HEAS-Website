@@ -74,7 +74,7 @@ export default function BlogPost() {
     <article className="bg-white text-black">
       <div className="mx-auto max-w-5xl px-4 pt-24 pb-16">
         <header className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-semibold leading-tight">
+          <h1 className="text-2xl md:text-4xl font-semibold leading-tight">
             {post.title}
           </h1>
           <div className="mt-2 text-sm text-black/60">
@@ -90,7 +90,7 @@ export default function BlogPost() {
               <img
                 src={CONTENT["designing-spaces-that-speak"].images.square}
                 alt="Square visual 1"
-                className="w-full h-auto rounded-lg border border-black/10"
+                className="w-full h-auto border border-black/10"
                 loading="eager"
               />
             </figure>
@@ -99,7 +99,7 @@ export default function BlogPost() {
               <img
                 src={CONTENT["designing-spaces-that-speak"].images.rect2}
                 alt="Square visual 2"
-                className="w-full h-auto rounded-lg border border-black/10"
+                className="w-full h-auto border border-black/10"
                 loading="lazy"
               />
             </figure>
@@ -108,7 +108,7 @@ export default function BlogPost() {
               <img
                 src={CONTENT["designing-spaces-that-speak"].images.rect1}
                 alt="Rectangular visual"
-                className="w-full h-auto rounded-lg border border-black/10"
+                className="w-full h-auto border border-black/10"
                 loading="lazy"
               />
             </figure>
@@ -117,7 +117,7 @@ export default function BlogPost() {
 
         {post.sections.map((sec, i) => (
           <section key={i} className="mb-10">
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">{sec.h}</h2>
+            <h2 className="text-xl md:text-xl font-semibold mb-4">{sec.h}</h2>
             <ul className="space-y-2">
               {sec.items.map((it, j) => (
                 <li key={j} className="leading-relaxed">
@@ -130,14 +130,14 @@ export default function BlogPost() {
         ))}
 
         <section className="mb-10">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          <h2 className="text-xl md:text-xl font-semibold mb-4">
             The HEAS Design Process
           </h2>
           <p className="leading-relaxed max-w-3xl">{post.process}</p>
         </section>
 
         <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          <h2 className="text-xl md:text-xl font-semibold mb-4">
             Why Clients Choose HEAS
           </h2>
           <p className="leading-relaxed max-w-3xl">{post.why}</p>
