@@ -33,7 +33,7 @@ const projects: Project[] = [
 export default function Projects() {
   return (
     <section className="bg-white text-black mb-16">
-      <div className="mx-auto max-w-6xl px-4 pt-10 md:pt-16">
+      <div className="mx-8  px-4 pt-10 md:pt-16">
         <header className="mb-8 md:mb-12">
           <h1 className="text-xl md:text-2xl font-semibold tracking-tight">
             Projects
