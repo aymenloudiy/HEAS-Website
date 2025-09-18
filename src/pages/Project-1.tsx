@@ -96,13 +96,11 @@ export const projectImages: ProjectImage[] = [
 ];
 
 export default function DowntownTorontoResidence() {
-  // Build one gallery array (hero first)
   const gallery = useMemo<ProjectImage[]>(() => [hero, ...projectImages], []);
 
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const isOpen = openIdx !== null;
 
-  // keyboard controls
   const onKey = useCallback(
     (e: KeyboardEvent) => {
       if (!isOpen) return;
@@ -122,7 +120,6 @@ export default function DowntownTorontoResidence() {
     return () => document.removeEventListener("keydown", onKey);
   }, [onKey]);
 
-  // lock page scroll while modal open
   useEffect(() => {
     if (!isOpen) return;
     const prev = document.body.style.overflow;
@@ -147,7 +144,6 @@ export default function DowntownTorontoResidence() {
         </p>
       </div>
 
-      {/* HERO — NOT a link; click opens modal index 0 */}
       <div className="mx-auto max-w-5xl px-2 mt-8 md:mt-10">
         <button
           type="button"
@@ -176,7 +172,6 @@ export default function DowntownTorontoResidence() {
         </p>
       </div>
 
-      {/* Masonry-like grid */}
       <div className="mx-auto max-w-5xl px-2 mt-8 md:mt-12 pb-16">
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
           {projectImages.map((img, i) => (
@@ -210,7 +205,6 @@ export default function DowntownTorontoResidence() {
         </p>
       </div>
 
-      {/* LIGHTBOX MODAL */}
       {isOpen && (
         <div
           role="dialog"
@@ -228,7 +222,6 @@ export default function DowntownTorontoResidence() {
               className="max-w-[94vw] max-h-[88vh] object-contain"
             />
 
-            {/* Close */}
             <button
               type="button"
               onClick={() => setOpenIdx(null)}
@@ -238,7 +231,6 @@ export default function DowntownTorontoResidence() {
               ×
             </button>
 
-            {/* Prev */}
             <button
               type="button"
               onClick={() =>
@@ -252,7 +244,6 @@ export default function DowntownTorontoResidence() {
               ‹
             </button>
 
-            {/* Next */}
             <button
               type="button"
               onClick={() =>
@@ -264,7 +255,6 @@ export default function DowntownTorontoResidence() {
               ›
             </button>
 
-            {/* Caption */}
             <div className="mt-3 text-center text-xs text-white/80">
               {gallery[openIdx!].alt}
             </div>
