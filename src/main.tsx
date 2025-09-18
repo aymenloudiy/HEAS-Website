@@ -18,6 +18,7 @@ import ProjectBeforeAfterArticle from "./pages/ProjectBeforeAfter.tsx";
 import NewMembersArticle from "./pages/NewMembers.tsx";
 import WhitePaintArticle from "./pages/WhitePaint.tsx";
 import LayeringArticle from "./pages/Layering.tsx";
+import ChurchStreetResidence from "./pages/Project-2.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -34,6 +35,10 @@ createRoot(document.getElementById("root")!).render(
           <Route
             path="projects/downtown-toronto-residence"
             element={<DowntownTorontoResidence />}
+          />
+          <Route
+            path="/projects/church-street-residence"
+            element={<ChurchStreetResidence />}
           />
           <Route
             path="projects/downtown-toronto-residence/gallery"

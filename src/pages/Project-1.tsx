@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { useEffect, useMemo, useState, useCallback } from "react";
 
 type ProjectImage = { src: string; alt: string };
 
@@ -96,13 +96,49 @@ export const projectImages: ProjectImage[] = [
 ];
 
 export default function DowntownTorontoResidence() {
+  // Build one gallery array (hero first)
+  const gallery = useMemo<ProjectImage[]>(() => [hero, ...projectImages], []);
+
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const isOpen = openIdx !== null;
+
+  // keyboard controls
+  const onKey = useCallback(
+    (e: KeyboardEvent) => {
+      if (!isOpen) return;
+      if (e.key === "Escape") setOpenIdx(null);
+      if (e.key === "ArrowRight")
+        setOpenIdx((i) => (i === null ? 0 : (i + 1) % gallery.length));
+      if (e.key === "ArrowLeft")
+        setOpenIdx((i) =>
+          i === null ? 0 : (i - 1 + gallery.length) % gallery.length
+        );
+    },
+    [isOpen, gallery.length]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [onKey]);
+
+  // lock page scroll while modal open
+  useEffect(() => {
+    if (!isOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [isOpen]);
+
   return (
     <section className="bg-white text-black">
-      <div className="mx-auto max-w-5xl px-4 pt-10 md:pt-16">
+      <div className="mx-auto max-w-5xl px-2 pt-10 md:pt-16">
         <h1 className="text-xl md:text-2xl font-semibold tracking-tight">
           Downtown Toronto Residence
         </h1>
-        <p className="mt-4 max-w-3xl leading-relaxed text-sm md:text-base">
+        <p className="mt-4 leading-relaxed text-sm md:text-base">
           Located in the heart of downtown Toronto, this residence is a study in
           contemporary minimalism and refined comfort. The design embraces a
           restrained palette of soft greys, warm wood finishes, and clean white
@@ -111,8 +147,14 @@ export default function DowntownTorontoResidence() {
         </p>
       </div>
 
-      <div className="mx-auto max-w-5xl px-4 mt-8 md:mt-10">
-        <Link to="gallery" aria-label="Open gallery" className="group block">
+      {/* HERO — NOT a link; click opens modal index 0 */}
+      <div className="mx-auto max-w-5xl px-2 mt-8 md:mt-10">
+        <button
+          type="button"
+          aria-label="Open larger image"
+          onClick={() => setOpenIdx(0)}
+          className="group block w-full text-left"
+        >
           <figure className="relative overflow-hidden border border-black/10">
             <img
               src={hero.src}
@@ -120,14 +162,11 @@ export default function DowntownTorontoResidence() {
               loading="eager"
               className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
             />
-            <figcaption className="absolute bottom-0 left-0 right-0 bg-white/70 backdrop-blur px-3 py-2 text-xs">
-              Click to view full gallery (22 photos)
-            </figcaption>
           </figure>
-        </Link>
+        </button>
       </div>
 
-      <div className="mx-auto max-w-5xl px-4 mt-8">
+      <div className="mx-auto max-w-5xl px-2 mt-8">
         <p className="max-w-3xl leading-relaxed text-sm md:text-base">
           The open-concept layout maximizes function and flow. Custom millwork
           and built-ins keep lines sleek and spaces uncluttered. Light—both
@@ -137,34 +176,101 @@ export default function DowntownTorontoResidence() {
         </p>
       </div>
 
-      <div className="mx-auto max-w-5xl px-4 mt-8 md:mt-12 pb-16">
+      {/* Masonry-like grid */}
+      <div className="mx-auto max-w-5xl px-2 mt-8 md:mt-12 pb-16">
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
-          {projectImages.map((img) => (
+          {projectImages.map((img, i) => (
             <figure
               key={img.src}
-              className="mb-4 break-inside-avoid  overflow-hidden border border-black/10"
+              className="mb-4 break-inside-avoid overflow-hidden border border-black/10"
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className="w-full h-auto object-cover"
-              />
-              <figcaption className="px-3 py-2 text-[11px] md:text-xs bg-white">
-                {img.alt}
-              </figcaption>
+              <button
+                type="button"
+                onClick={() => setOpenIdx(i + 1)} // +1 because hero is index 0
+                className="block w-full focus:outline-none focus:ring-2 focus:ring-black/60"
+                aria-label="Open larger image"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-[1.01]"
+                />
+              </button>
             </figure>
           ))}
         </div>
       </div>
 
-      <div className="mx-auto max-w-5xl px-4 pb-20">
+      <div className="mx-auto max-w-5xl px-2 pb-20">
         <p className="max-w-3xl leading-relaxed text-sm md:text-base">
           Every detail—from spatial planning to material selection—was conceived
           to create an environment that feels timeless, functional, and
           effortlessly elegant, tailored for modern city living.
         </p>
       </div>
+
+      {/* LIGHTBOX MODAL */}
+      {isOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setOpenIdx(null)} // close on backdrop
+        >
+          <div
+            className="relative max-w-[94vw] max-h-[88vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={gallery[openIdx!].src}
+              alt={gallery[openIdx!].alt}
+              className="max-w-[94vw] max-h-[88vh] object-contain"
+            />
+
+            {/* Close */}
+            <button
+              type="button"
+              onClick={() => setOpenIdx(null)}
+              aria-label="Close"
+              className="absolute -top-3 -right-3 rounded-full bg-white/90 px-3 py-1 text-black text-sm shadow hover:bg-white"
+            >
+              ×
+            </button>
+
+            {/* Prev */}
+            <button
+              type="button"
+              onClick={() =>
+                setOpenIdx((i) =>
+                  i === null ? 0 : (i - 1 + gallery.length) % gallery.length
+                )
+              }
+              aria-label="Previous image"
+              className="absolute left-0 top-1/2 -translate-y-1/2 px-3 py-2 text-white/90 hover:text-white"
+            >
+              ‹
+            </button>
+
+            {/* Next */}
+            <button
+              type="button"
+              onClick={() =>
+                setOpenIdx((i) => (i === null ? 0 : (i + 1) % gallery.length))
+              }
+              aria-label="Next image"
+              className="absolute right-0 top-1/2 -translate-y-1/2 px-3 py-2 text-white/90 hover:text-white"
+            >
+              ›
+            </button>
+
+            {/* Caption */}
+            <div className="mt-3 text-center text-xs text-white/80">
+              {gallery[openIdx!].alt}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

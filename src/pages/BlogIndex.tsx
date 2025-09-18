@@ -3,7 +3,7 @@ import { Link } from "react-router";
 type BlogPost = {
   slug: string;
   title: string;
-  excerpt: string;
+  excerpt?: string;
   cover: string;
   date?: string;
   readingTime?: string;
@@ -14,8 +14,6 @@ const posts: BlogPost[] = [
     slug: "designing-spaces-that-speak",
     title:
       "Designing Spaces That Speak — The HEAS Approach to Timeless Interiors",
-    excerpt:
-      "At HEAS, we craft interiors that are both beautiful and deeply functional — where every texture, color, and silhouette tells part of your story.",
     cover: "/images/blogs/blog-1/3.png",
     date: "Sep 2025",
     readingTime: "3 min",

@@ -10,7 +10,7 @@ type PairRowProps = {
 
 function PairRow({ title, body, imgSrc, imgAlt, reverse }: PairRowProps) {
   const textRef = useRef<HTMLDivElement | null>(null);
-  const [paraH, setParaH] = useState<number | null>(null);
+  const [, setParaH] = useState<number | null>(null);
 
   useLayoutEffect(() => {
     const measure = () => {
@@ -36,15 +36,14 @@ function PairRow({ title, body, imgSrc, imgAlt, reverse }: PairRowProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mx-auto max-w-6xl">
         <div
           ref={textRef}
-          className={`${textOrder} flex flex-col justify-center`}
+          className={`${textOrder} flex flex-col justify-start`}
         >
-          <h3 className="mb-4 font-bold">{title}</h3>
+          <h3 className="mb-4 font-bold font-[butler]">{title}</h3>
           <p className="leading-relaxed">{body}</p>
         </div>
 
         <figure
-          className={`${imgOrder} relative overflow-hidden  bg-gray-100`}
-          style={paraH ? { height: paraH } : undefined}
+          className={`${imgOrder} relative h-[400px] overflow-hidden bg-gray-100`}
         >
           <img
             src={imgSrc}
@@ -63,7 +62,7 @@ export default function AboutContent() {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-24 pb-16 bg-white text-black">
       <section className="my-12">
-        <h2 className="text-center font-bold mb-6 text-xl md:text-2xl">
+        <h2 className="text-center font-bold mb-6 text-xl md:text-2xl font-[Butler] text-[24px]! ">
           At HEAS, we believe that thoughtful design has the power to transform
           everyday living.
         </h2>

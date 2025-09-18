@@ -10,7 +10,7 @@ function Header() {
         <li className="flex-1 text-center">
           <NavLink to="/">
             <h1 className="text-xl font-semibold flex justify-center">
-              <img className="h-[100px]" src="/Logo/HEAS.png" alt="" />
+              <img className="h-[30px]" src="/Logo/HEAS-logo.png" alt="" />
             </h1>
           </NavLink>
         </li>

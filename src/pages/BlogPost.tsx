@@ -73,16 +73,19 @@ export default function BlogPost() {
   return (
     <article className="bg-white text-black">
       <div className="mx-auto max-w-5xl px-4 pt-24 pb-16">
-        <header className="mb-8">
-          <h1 className="text-2xl md:text-4xl font-semibold leading-tight">
-            {post.title}
-          </h1>
-          <div className="mt-2 text-sm text-black/60">
-            Sep 2025 · 3 min read
+        <header className="mb-8 flex justify-center gap3">
+          <div className="flex justify-center flex-col text-center gap-3">
+            <h1 className="text-2xl md:text-4xl font-semibold leading-tight">
+              {post.title}
+            </h1>
+            <div className="mt-2 text-sm text-black/60">
+              Sep 2025 · 3 min read
+            </div>
+            <p className="text-lg leading-relaxed mb-10 max-w-3xl">
+              {post.intro}
+            </p>
           </div>
         </header>
-
-        <p className="text-lg leading-relaxed mb-10 max-w-3xl">{post.intro}</p>
 
         <section className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

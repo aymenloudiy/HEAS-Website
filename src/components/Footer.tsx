@@ -1,12 +1,9 @@
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-neutral-200 bg-white text-neutral-900">
-      <div className="mx-auto max-w-7xl px-6 py-10">
+    <footer className="border-t border-neutral-200 bg-white text-neutral-900 pt-5">
+      <div className="mx-3  py-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-3">
             <p className="text-xs tracking-[0.2em] text-neutral-600">
@@ -22,8 +19,7 @@ function Footer() {
                   className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
                   aria-label="Follow us on Instagram"
                 >
-                  <FaInstagram className="text-base" />
-                  <span>Instagram</span>
+                  <span>INSTAGRAM</span>
                 </a>
               </li>
               <li>
@@ -34,8 +30,7 @@ function Footer() {
                   className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
                   aria-label="Follow us on Facebook"
                 >
-                  <FaFacebook className="text-base" />
-                  <span>Facebook</span>
+                  <span>FACEBOOK</span>
                 </a>
               </li>
               <li>
@@ -46,23 +41,22 @@ function Footer() {
                   className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
                   aria-label="Follow us on X (Twitter)"
                 >
-                  <FaXTwitter className="text-base" />
-                  <span>LinkedIn</span>
+                  <span>LINKEDIN</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div className="md:col-span-6">
-            <div className="flex flex-col items-center gap-6 text-center md:items-center md:text-center">
+          <div className="md:col-span-6 flex justify-center">
+            <div className="flex flex-col items-start gap-6 text-start">
               <img
-                className="h-24 w-auto"
-                src="/Logo/HEAS.png"
+                className="h-8 w-auto"
+                src="/Logo/HEAS-logo.png"
                 alt="HEAS Inc."
                 loading="lazy"
                 decoding="async"
               />
 
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-light">
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-light pb-5">
                 <p className="tracking-wide">TORONTO, ON</p>
                 <a
                   href="tel:+18193296895"
@@ -79,13 +73,13 @@ function Footer() {
               </div>
 
               <div className="max-w-2xl text-xs leading-relaxed text-neutral-700">
-                <p>
+                <p className="text-[10px]">
                   HEAS INC ACKNOWLEDGES THAT WE ARE ON THE TRADITIONAL TERRITORY
                   OF MANY NATIONS INCLUDING THE MISSISSAUGAS OF THE CREDIT, THE
                   ANISHNABEG, THE CHIPPEWA, THE HAUDENOSAUNEE, AND THE WENDAT
                   PEOPLES.
                 </p>
-                <p className="mt-3">
+                <p className="mt-3 text-[10px]">
                   TODAY, IT IS HOME TO MANY DIVERSE FIRST NATIONS, INUIT, AND
                   MÉTIS PEOPLES AND WE ARE GRATEFUL TO WORK ON THIS LAND.
                 </p>

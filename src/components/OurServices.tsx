@@ -18,9 +18,9 @@ function OurServices() {
       <hr className="my-12 mx-auto w-full max-w-6xl border-neutral-200" />
       <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-7 flex flex-col justify-center">
-            <div>
-              <h3 className="mb-3 text-xl font-semibold">
+          <div className="md:col-span-7 flex flex-col">
+            <div className="self-start">
+              <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Full Interior Design Packages
               </h3>
               <p className="text-neutral-700">
@@ -38,9 +38,9 @@ function OurServices() {
             </div>
             <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
-            <section className="mx-auto w-full max-w-6xl">
+            <section className="mx-auto w-full max-w-6xl self-end">
               <div className="md:col-span-7">
-                <h3 className="mb-3 text-xl font-semibold">
+                <h3 className="font-[butler] mb-3 text-xl font-semibold">
                   Furnishing & Styling
                 </h3>
                 <p className="text-neutral-700">
@@ -70,7 +70,9 @@ function OurServices() {
       <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
       <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12">
-        <h3 className="mb-3 text-xl font-semibold">Custom Cabinetry Design</h3>
+        <h3 className="font-[butler] mb-3 text-xl font-semibold">
+          Custom Cabinetry Design
+        </h3>
         <p className="text-neutral-700">
           We specialize in the design of custom millwork and cabinetry for
           kitchens, bathrooms, closets, and built-ins. Our designs prioritize
@@ -92,13 +94,13 @@ function OurServices() {
             <img
               src="/pictures/image (68).jpg"
               alt="Soft light through architectural curtains"
-              className="w-full h-auto object-cover rounded"
+              className="w-full h-auto object-cover"
             />
           </div>
 
-          <div className="md:col-span-6 flex flex-col justify-center">
-            <div>
-              <h3 className="mb-3 text-xl font-semibold">
+          <div className="md:col-span-6 flex flex-col">
+            <div className="self-start">
+              <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Renovation Coordination
               </h3>
               <p className="text-neutral-700">
@@ -116,8 +118,8 @@ function OurServices() {
 
             <hr className="my-8 border-neutral-200" />
 
-            <div>
-              <h3 className="mb-3 text-xl font-semibold">
+            <div className="self-center">
+              <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Exclusive Trade Access
               </h3>
               <p className="text-neutral-700">
@@ -139,13 +141,18 @@ function OurServices() {
       <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
       <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12 mb-20">
-        <h3 className="mb-3 text-xl font-semibold">Online Consultations</h3>
+        <h3 className="font-[butler] mb-3 text-xl font-semibold">
+          Online Consultations
+        </h3>
         <p className="text-neutral-700">
           We also offer remote design services for clients seeking flexible
           support. Ideal for smaller projects or out-of-town clients, our online
           consultations provide customized layouts, mood boards, and shoppable
           product links—delivered with the same care and attention as our
           in-person work. It’s design help, wherever you are.
+        </p>
+        <p className="text-neutral-700 mt-4 text-[16px]!">
+          Starting from $40/ Hour
         </p>
       </section>
     </div>

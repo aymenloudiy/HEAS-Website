@@ -5,7 +5,7 @@ function TeamContent() {
     <div className="mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16">
       <div className="grid grid-cols-1 md:grid-cols-12 items-stretch gap-8 md:gap-16 lg:gap-24">
         <div className="md:col-span-5 flex items-center justify-center">
-          <h2 className="text-center font-semibold leading-tight text-2xl md:text-3xl lg:text-4xl">
+          <h2 className="text-center font-semibold leading-tight text-[24px]! font-[butler] md:text-3xl lg:text-4xl">
             HEAS was founded on the belief that design should be both
             intentional and inspiring.
           </h2>
@@ -37,7 +37,7 @@ function TeamContent() {
         </div>
       </div>
 
-      <hr className="my-12 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25" />
+      <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
       <section>
         <h3 className="mb-8 font-bold text-xl">People</h3>
@@ -45,7 +45,7 @@ function TeamContent() {
           {["1", "2", "3", "4"].map((n) => (
             <li
               key={n}
-              className="aspect-square overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 flex items-center justify-center"
+              className="aspect-square overflow-hidden rounded-lg flex items-center justify-center"
             >
               <NavLink to="/">
                 <img
@@ -59,10 +59,10 @@ function TeamContent() {
         </ul>
       </section>
 
-      <hr className="my-12 h-1 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25" />
+      <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-12 items-start gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-12">
           <div className="md:col-span-8 text-[14px] leading-relaxed">
             <h3 className="mb-6 font-bold text-xl">Careers</h3>
             <p className="my-4">
@@ -76,7 +76,7 @@ function TeamContent() {
               detail-driven individuals who share our commitment to design
               excellence.
             </p>
-            <p className="my-2">
+            <p className="my-4">
               At HEAS, we believe that great design emerges from diverse voices
               and collaborative thinking. We are committed to fostering an
               inclusive studio culture that values different backgrounds,
@@ -84,7 +84,7 @@ function TeamContent() {
               creativity, and mutual respect—qualities we believe are essential
               to both innovation and longevity.
             </p>
-            <p className="my-2">
+            <p className="my-2 mb-16">
               All positions are based in our Toronto studio. While we appreciate
               all applications, only candidates selected for available roles
               will be contacted.
