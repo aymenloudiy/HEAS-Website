@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 function TeamContent() {
   return (
     <div className="mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-12 items-stretch gap-8 md:gap-16 lg:gap-24">
+      <div className="grid grid-cols-1 md:grid-cols-12 items-stretch gap-8 md:gap-16 lg:gap-24 mb-24">
         <div className="md:col-span-5 flex items-center justify-center">
           <h2 className="text-center font-semibold leading-tight text-[24px]! font-[butler] md:text-3xl lg:text-4xl">
             HEAS was founded on the belief that design should be both
@@ -39,7 +39,7 @@ function TeamContent() {
 
       <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
-      <section>
+      <section className="mb-24">
         <h3 className="mb-8 font-bold text-xl">People</h3>
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-10">
           {["1", "2", "3", "4"].map((n) => (
@@ -61,7 +61,7 @@ function TeamContent() {
 
       <hr className="my-8 mx-auto w-full max-w-6xl border-neutral-200" />
 
-      <section>
+      <section className="mb-12">
         <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-12">
           <div className="md:col-span-8 text-[14px] leading-relaxed">
             <h3 className="mb-6 font-bold text-xl">Careers</h3>

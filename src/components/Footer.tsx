@@ -2,18 +2,16 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-neutral-200 bg-white text-neutral-900 pt-5">
-      <div className="mx-3  py-10">
+    <footer className="border-t border-neutral-200 bg-white text-neutral-900 pt-5 pl-8">
+      <div className="ml-3  py-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-3">
-            <p className="text-xs tracking-[0.2em] text-neutral-600">
-              FOLLOW US
-            </p>
+            <p className="text-xs ">FOLLOW US</p>
 
             <ul className="mt-4 space-y-2 text-sm font-extralight">
               <li>
                 <a
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/heas_inc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
@@ -24,7 +22,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://facebook.com/"
+                  href="https://www.facebook.com/profile.php?id=100094004492469"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
@@ -35,7 +33,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://x.com/"
+                  href="https://www.linkedin.com/company/heasinc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
@@ -46,7 +44,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="md:col-span-6 flex justify-center">
+          <div className="md:col-span-6 md:col-start-7 flex justify-center">
             <div className="flex flex-col items-start gap-6 text-start">
               <img
                 className="h-8 w-auto"
@@ -56,7 +54,7 @@ function Footer() {
                 decoding="async"
               />
 
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-light pb-5">
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-light pb-8">
                 <p className="tracking-wide">TORONTO, ON</p>
                 <a
                   href="tel:+18193296895"
@@ -86,8 +84,6 @@ function Footer() {
               </div>
             </div>
           </div>
-
-          <div className="md:col-span-3" />
 
           <div className="md:col-span-12 mt-8 border-t border-neutral-200 pt-6">
             <div className="flex flex-col items-center justify-between gap-4 text-xs text-neutral-600 md:flex-row">

@@ -16,17 +16,19 @@ const projects: Project[] = [
     title: "Downtown Toronto Residence",
     location: "Toronto, Canada",
     cover: "/images/downtown-toronto-residence/1.jpg",
-    blurb:
-      "Contemporary minimalism with soft greys, warm wood, and clean white surfaces.",
   },
   {
     slug: "church-street-residence",
     title: "Church Street Residence",
     location: "Toronto, Canada",
     cover: "/Project1/Cover Picture/Copy of 403-04.png",
-    blurb:
-      "A serene one-bedroom retreat above the skyline—light oak, ash, white marble, and chrome.",
-    imagesCount: 22, // cover + 21 images
+    imagesCount: 22,
+  },
+  {
+    slug: "uptown-core-kitchen",
+    title: "Uptown Core Kitchen",
+    location: "Oakville, Canada",
+    cover: "/Project 3/Cover Photo/Kitchen 04.png",
   },
 ];
 
@@ -35,7 +37,7 @@ export default function Projects() {
     <section className="bg-white text-black mb-16">
       <div className="mx-8  px-4 pt-10 md:pt-16">
         <header className="mb-8 md:mb-12">
-          <h1 className="text-xl md:text-2xl font-semibold tracking-tight">
+          <h1 className="text-xl md:text-2xl font-semibold tracking-tight mb-24">
             Projects
           </h1>
         </header>
@@ -53,7 +55,7 @@ export default function Projects() {
                     src={p.cover}
                     alt={`${p.title} — cover`}
                     loading="eager"
-                    className="w-full h-[512px] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    className="w-full h-[512px] object-cover transition-transform duration-300 group-hover:scale-[1.02] aspect-[4/3]"
                   />
                 </figure>
               </Link>

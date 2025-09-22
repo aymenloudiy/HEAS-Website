@@ -36,7 +36,7 @@ function PairRow({ title, body, imgSrc, imgAlt, reverse }: PairRowProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mx-auto max-w-6xl">
         <div
           ref={textRef}
-          className={`${textOrder} flex flex-col justify-start`}
+          className={`${textOrder} flex flex-col justify-center`}
         >
           <h3 className="mb-4 font-bold font-[butler]">{title}</h3>
           <p className="leading-relaxed">{body}</p>
@@ -60,7 +60,7 @@ function PairRow({ title, body, imgSrc, imgAlt, reverse }: PairRowProps) {
 
 export default function AboutContent() {
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-24 pb-16 bg-white text-black">
+    <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 bg-white text-black">
       <section className="my-12">
         <h2 className="text-center font-bold mb-6 text-xl md:text-2xl font-[Butler] text-[24px]! ">
           At HEAS, we believe that thoughtful design has the power to transform

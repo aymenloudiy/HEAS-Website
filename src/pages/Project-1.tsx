@@ -181,7 +181,7 @@ export default function DowntownTorontoResidence() {
             >
               <button
                 type="button"
-                onClick={() => setOpenIdx(i + 1)} // +1 because hero is index 0
+                onClick={() => setOpenIdx(i + 1)}
                 className="block w-full focus:outline-none focus:ring-2 focus:ring-black/60"
                 aria-label="Open larger image"
               >
@@ -210,7 +210,7 @@ export default function DowntownTorontoResidence() {
           role="dialog"
           aria-modal="true"
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-          onClick={() => setOpenIdx(null)} // close on backdrop
+          onClick={() => setOpenIdx(null)}
         >
           <div
             className="relative max-w-[94vw] max-h-[88vh]"

@@ -16,9 +16,9 @@ function OurServices() {
       </section>
 
       <hr className="my-12 mx-auto w-full max-w-6xl border-neutral-200" />
-      <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12">
+      <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12 ">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-7 flex flex-col">
+          <div className="md:col-span-7 flex flex-col gap-10">
             <div className="self-start">
               <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Full Interior Design Packages
@@ -98,7 +98,7 @@ function OurServices() {
             />
           </div>
 
-          <div className="md:col-span-6 flex flex-col">
+          <div className="md:col-span-6 flex flex-col gap-20 ">
             <div className="self-start">
               <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Renovation Coordination
@@ -118,7 +118,7 @@ function OurServices() {
 
             <hr className="my-8 border-neutral-200" />
 
-            <div className="self-center">
+            <div className="">
               <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Exclusive Trade Access
               </h3>
@@ -151,7 +151,7 @@ function OurServices() {
           product links—delivered with the same care and attention as our
           in-person work. It’s design help, wherever you are.
         </p>
-        <p className="text-neutral-700 mt-4 text-[16px]!">
+        <p className="mt-4 text-sm italic text-neutral-800">
           Starting from $40/ Hour
         </p>
       </section>

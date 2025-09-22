@@ -45,13 +45,19 @@ function ContactUs() {
         <div>
           <ul className="flex gap-6 justify-center">
             <li className="">
-              <FaFacebook />
+              <a href="https://www.facebook.com/profile.php?id=100094004492469">
+                <FaFacebook />
+              </a>
             </li>
             <li className="">
-              <FaLinkedin />
+              <a href="https://www.linkedin.com/company/heasinc/">
+                <FaLinkedin />
+              </a>
             </li>
             <li className="">
-              <FaInstagram />
+              <a href="https://www.instagram.com/heas_inc/">
+                <FaInstagram />
+              </a>
             </li>
           </ul>
         </div>

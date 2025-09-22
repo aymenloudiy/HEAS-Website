@@ -11,7 +11,6 @@ import Projects from "./pages/Projects.tsx";
 import Services from "./pages/Services.tsx";
 import Team from "./pages/Team.tsx";
 import DowntownTorontoResidence from "./pages/Project-1";
-import DowntownTorontoResidenceGallery from "./pages/Project1Gallery.tsx";
 import BlogsIndex from "./pages/BlogIndex.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
 import ProjectBeforeAfterArticle from "./pages/ProjectBeforeAfter.tsx";
@@ -19,6 +18,7 @@ import NewMembersArticle from "./pages/NewMembers.tsx";
 import WhitePaintArticle from "./pages/WhitePaint.tsx";
 import LayeringArticle from "./pages/Layering.tsx";
 import ChurchStreetResidence from "./pages/Project-2.tsx";
+import Project3 from "./pages/Project3.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -40,10 +40,7 @@ createRoot(document.getElementById("root")!).render(
             path="/projects/church-street-residence"
             element={<ChurchStreetResidence />}
           />
-          <Route
-            path="projects/downtown-toronto-residence/gallery"
-            element={<DowntownTorontoResidenceGallery />}
-          />
+          <Route path="/projects/uptown-core-kitchen" element={<Project3 />} />
           <Route path="blogs" element={<BlogsIndex />} />
           <Route path="blogs/:slug" element={<BlogPost />} />
           <Route path="news" element={<News />} />
