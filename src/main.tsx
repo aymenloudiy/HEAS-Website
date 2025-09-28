@@ -19,6 +19,7 @@ import WhitePaintArticle from "./pages/WhitePaint.tsx";
 import LayeringArticle from "./pages/Layering.tsx";
 import ChurchStreetResidence from "./pages/Project-2.tsx";
 import Project3 from "./pages/Project3.tsx";
+import ComingSoon from "./pages/ComingSoon.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -57,6 +58,7 @@ createRoot(document.getElementById("root")!).render(
             path="news/before-after-toronto-townhome"
             element={<ProjectBeforeAfterArticle />}
           />
+          <Route path="/shop" element={<ComingSoon />} />
         </Route>
       </Routes>
     </BrowserRouter>

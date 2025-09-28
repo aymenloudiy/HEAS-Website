@@ -6,48 +6,49 @@ function Footer() {
       <div className="ml-3  py-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-3">
-            <p className="text-xs ">FOLLOW US</p>
-
-            <ul className="mt-4 space-y-2 text-sm font-extralight">
-              <li>
-                <a
-                  href="https://www.instagram.com/heas_inc/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
-                  aria-label="Follow us on Instagram"
-                >
-                  <span>INSTAGRAM</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100094004492469"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
-                  aria-label="Follow us on Facebook"
-                >
-                  <span>FACEBOOK</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/heasinc/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
-                  aria-label="Follow us on X (Twitter)"
-                >
-                  <span>LINKEDIN</span>
-                </a>
-              </li>
-            </ul>
+            <div className="flex justify-center flex-col h-full">
+              <p className="text-xs ">FOLLOW US</p>
+              <ul className="mt-4 space-y-2 text-sm font-extralight">
+                <li>
+                  <a
+                    href="https://www.instagram.com/heas_inc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
+                    aria-label="Follow us on Instagram"
+                  >
+                    <span>INSTAGRAM</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100094004492469"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
+                    aria-label="Follow us on Facebook"
+                  >
+                    <span>FACEBOOK</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/heasinc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded"
+                    aria-label="Follow us on X (Twitter)"
+                  >
+                    <span>LINKEDIN</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="md:col-span-6 md:col-start-7 flex justify-center">
             <div className="flex flex-col items-start gap-6 text-start">
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto mb-5"
                 src="/Logo/HEAS-logo.png"
                 alt="HEAS Inc."
                 loading="lazy"

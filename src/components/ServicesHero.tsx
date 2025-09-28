@@ -1,6 +1,6 @@
 function ServicesHero() {
   return (
-    <div className="mx-32 h-[512px] overflow-hidden">
+    <div className="h-[512px] overflow-hidden mx-0 sm:mx-32">
       <video
         className="object-cover h-full w-full"
         src="/videos/Services_VIdeo.mp4"

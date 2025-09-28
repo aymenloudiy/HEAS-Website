@@ -1,33 +1,45 @@
 import { NavLink } from "react-router";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 
-function Navbar() {
+type NavbarProps = {
+  mobile?: boolean;
+  onClickLink?: () => void;
+};
+
+function Navbar({ mobile = false, onClickLink }: NavbarProps) {
+  const linkCls = "text-[12px] block py-2 md:py-0";
+
   return (
-    <nav className="bg-white">
-      <ul className="flex gap-8 items-center">
+    <nav>
+      <ul
+        className={mobile ? "flex flex-col gap-2" : "flex items-center gap-8"}
+      >
         <li>
-          <NavLink to="/services" className="text-[12px]">
+          <NavLink to="/services" className={linkCls} onClick={onClickLink}>
             SERVICES
           </NavLink>
         </li>
-        <Dropdown />
+
+        {/* Keep Dropdown as you had it; ensure it behaves in mobile too */}
+        {/* <Dropdown /> */}
+
         <li>
-          <NavLink to="/projects" className="text-[12px]">
+          <NavLink to="/projects" className={linkCls} onClick={onClickLink}>
             PROJECTS
           </NavLink>
         </li>
         <li>
-          <NavLink to="/blogs" className="text-[12px]">
+          <NavLink to="/blogs" className={linkCls} onClick={onClickLink}>
             BLOGS
           </NavLink>
         </li>
         <li>
-          <NavLink to="/news" className="text-[12px]">
+          <NavLink to="/news" className={linkCls} onClick={onClickLink}>
             NEWS
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className="text-[12px]">
+          <NavLink to="/contact" className={linkCls} onClick={onClickLink}>
             CONTACT
           </NavLink>
         </li>
@@ -35,4 +47,5 @@ function Navbar() {
     </nav>
   );
 }
+
 export default Navbar;

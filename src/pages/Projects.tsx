@@ -55,13 +55,13 @@ export default function Projects() {
                     src={p.cover}
                     alt={`${p.title} — cover`}
                     loading="eager"
-                    className="w-full h-[512px] object-cover transition-transform duration-300 group-hover:scale-[1.02] aspect-[4/3]"
+                    className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-[1.02] aspect-[3/4]"
                   />
                 </figure>
               </Link>
 
               <Link to={p.slug} className="mt-3 block">
-                <h2 className="text-base md:text-lg font-medium">{p.title}</h2>
+                <h2 className="text-xs! md:text-sm! font-medium">{p.title}</h2>
                 {p.location && (
                   <div className="text-xs md:text-sm">{p.location}</div>
                 )}

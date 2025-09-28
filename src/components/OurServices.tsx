@@ -1,7 +1,7 @@
 function OurServices() {
   return (
     <div className="flex flex-col">
-      <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12 mt-16">
+      <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12 mt-16 mb-4">
         <h1 className="text-center font-semibold tracking-wide mb-6 text-2xl">
           Our Services
         </h1>
@@ -18,8 +18,8 @@ function OurServices() {
       <hr className="my-12 mx-auto w-full max-w-6xl border-neutral-200" />
       <section className="mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12 ">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-7 flex flex-col gap-10">
-            <div className="self-start">
+          <div className="md:col-span-7 flex flex-col justify-center">
+            <div className="">
               <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Full Interior Design Packages
               </h3>
@@ -98,8 +98,8 @@ function OurServices() {
             />
           </div>
 
-          <div className="md:col-span-6 flex flex-col gap-20 ">
-            <div className="self-start">
+          <div className="md:col-span-6 flex flex-col justify-center ">
+            <div className="">
               <h3 className="font-[butler] mb-3 text-xl font-semibold">
                 Renovation Coordination
               </h3>

@@ -62,10 +62,10 @@ export default function AboutContent() {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 bg-white text-black">
       <section className="my-12">
-        <h2 className="text-center font-bold mb-6 text-xl md:text-2xl font-[Butler] text-[24px]! ">
+        <h1 className="md:text-2xl font-[Butler] text-[24px]! text-center font-semibold tracking-wide mb-6 text-2xl">
           At HEAS, we believe that thoughtful design has the power to transform
           everyday living.
-        </h2>
+        </h1>
         <p className="text-center max-w-3xl mx-auto leading-relaxed">
           HEAS is a Toronto-based interior design and architecture studio
           dedicated to creating spaces that are as purposeful as they are
@@ -78,7 +78,7 @@ export default function AboutContent() {
         </p>
       </section>
 
-      <hr className="my-12 h-px bg-gradient-to-r from-transparent via-neutral-300 to-transparent border-0" />
+      <hr className="my-12 mx-auto w-full max-w-6xl border-neutral-200 mb-16 " />
 
       <PairRow
         title="We transform vision into space."

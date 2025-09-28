@@ -48,16 +48,16 @@ export default function BlogsIndex() {
                       src={p.cover}
                       alt={`${p.title} — cover`}
                       loading="eager"
-                      className="w-full h-[512px] object-cover transition-transform duration-300 group-hover:scale-[1.02] aspect-[4/3]"
+                      className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-[1.02] aspect-[4/3]"
                     />
                   </figure>
                 </Link>
                 <Link to={`/blogs/${p.slug}`} className="mt-3 block">
-                  <h2 className="text-base md:text-lg font-medium leading-snug">
+                  <h2 className="text-xs! md:text-sm! font-medium leading-snug">
                     {p.title}
                   </h2>
                   {(p.date || p.readingTime) && (
-                    <div className="text-xs md:text-sm text-black/70">
+                    <div className="text-xs md:text-sm text-black">
                       {[p.date, p.readingTime].filter(Boolean).join(" · ")}
                     </div>
                   )}

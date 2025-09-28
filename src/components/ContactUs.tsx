@@ -18,7 +18,7 @@ function ContactUs() {
     const data = new FormData(form);
 
     // Post directly to Formspree endpoint
-    const res = await fetch("https://formspree.io/f/xovkagbg", {
+    const res = await fetch("https://formspree.io/f/movkjpeb", {
       method: "POST",
       headers: { Accept: "application/json" },
       body: data,
